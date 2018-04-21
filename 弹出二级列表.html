@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="gb2312">
+  <title>弹出二级列表/title>
+<style>
+a { color: #000; text-decoration: none; }/*最开始的样式的颜色*/
+#menu { width:90px; height:28px; border-bottom:1px solid red;}/*配置div*/
+#menu ul { list-style: none; margin: 0px; padding: 0px; }
+#menu ul li a { display:block; width:87px; height:28px; line-height:28px; text-align:center;}
+#menu ul li ul {display:none; }
+#menu ul li ul li { width:87px; background:#eee;}
+#menu ul li ul li a:hover { background:blue; color:#fff;}
+#menu ul li:hover ul { display:block;}
+</style>
+</head>
+<body>
+<div id="menu">
+<ul>
+<li><a href="#">网页版式</a>
+<ul>
+<li><a href="#">自动布局</a></li>
+<li><a href="#">自动布局</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</body>
+</html>
